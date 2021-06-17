@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;800&display=swap");
+:root {
+    --text-color: rgb(0, 0, 0);
+    --text-color-light: rgb(255, 255, 255);
+    --contrast-color: rgb(189, 55, 0);
+    --bg-dark-color: rgb(0, 0, 0);
+    --bg-light-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Alegreya", serif;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+header {
+    font-family: "Open Sans", sans-serif;
+    height: 23vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+footer {
+    font-family: "Open Sans", sans-serif;
+    height: 70vh;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    background-color: var(--bg-dark-color);
+    color: var(--text-color-light);
+}
+
+main {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+.nodecoration {
+    text-decoration: none;
+}
+
+.mision-selected {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.mision-no-selected {
+    color: var(--contrast-color);
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nocursiva {
+    font-style: normal;
+}
+
+
+/*H E A D E R*/
+
+.headerlogo {
+    margin: 0px auto;
+    width: 278px;
+    height: 63px;
+}
+
+.navigation li {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navigation {
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.navigation a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.navigation a:hover {
+    color: var(--contrast-color);
+}
+
+.imageplanet {
+    height: 40vw;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--bg-dark-color);
+    background-size: 40%;
+    background-image: url(../img/bg-hero-mars.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    color: var(--text-color-light);
+}
+
+.main-index h1 {
+    font-size: 2.4rem;
+}
+
+.imageplanet p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+
+/*M A I N - I N D E X*/
+
+.cardstitle {
+    padding-top: 30px;
+    font-size: 1.8rem;
+}
+
+.cardssubtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.main-index img {
+    width: 100%;
+}
+
+.card-container h4 a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--contrast-color);
+}
+
+.card-container p {
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.card-container {
+    padding: 8px 12px;
+}
+
+.selected {
+    border-bottom: 3px solid;
+}
+
+
+/*M A I N - S C I F I*/
+
+.main-scifi h1 {
+    font-size: 2.8rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.grid-container-scifi {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.main-scifi img {
+    width: 100%;
+    height: 100%;
+}
+
+.scifi-title {
+    background-color: var(--bg-light-color);
+    padding: 4px 12px;
+    font-size: 1.5rem;
+}
+
+.scifi-cite {
+    background-color: var(--bg-light-color);
+    padding: 4px 12px;
+    font-style: italic;
+}
+
+.grid-container-scifi cite {
+    font-style: normal;
+    font-size: 1.3rem;
+    font-weight: 900;
+    position: relative;
+    padding-left: 36px;
+}
+
+.grid-container-scifi cite::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 5px;
+    background-color: var(--contrast-color);
+    top: 0.8em;
+    left: -1px;
+}
+
+.grid-container-scifi p {
+    padding-bottom: 10px;
+}
+
+.scifi-author {
+    margin-bottom: 20px;
+}
+
+
+/*M A I N - C I N E M A*/
+
+.main-cinema h1 {
+    font-size: 2.8rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main-cinema cite {
+    font-style: normal;
+    font-weight: bold;
+}
+
+.grid-container-cinema {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+}
+
+.video-card {
+    height: 0px;
+    width: 100%;
+    padding-top: 56.25%;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.main-cinema .video-card iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.main-cinema .video-card figure figcaption {
+    text-align: center;
+    background-color: var(--bg-light-color);
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 1.3rem;
+}
+
+
+/*M A I N  M A R S  2 0 2 0*/
+
+.grid-container-mars2020 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.mars2020-list {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.mars2020-article {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.main-mars2020 .video-card iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border: none;
+}
+
+.main-mars2020 .video-card figure figcaption {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 0.8rem;
+}
+
+.main-mars2020 h1 {
+    font-size: 3.5rem;
+    padding-bottom: 15px;
+}
+
+.main-mars2020 p {
+    font-size: 1.3rem;
+    padding-bottom: 15px;
+}
+
+.main-mars2020 h2 {
+    font-size: 2.4rem;
+    padding-bottom: 15px;
+}
+
+.main-mars2020 ul {
+    padding-left: 30px;
+    padding-bottom: 15px;
+    list-style-type: square;
+}
+
+.main-mars2020 ul li {
+    font-size: 1.3rem;
+}
+
+.main-mars2020 h3 {
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.mars2020-list ul li {
+    font-size: 1rem;
+}
+
+.mars2020-list ul {
+    list-style-type: none;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+
+/*F O O T E R*/
+
+.footerlogo {
+    margin: 0px auto;
+    width: 278px;
+    height: 63px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.footerlogo img {
+    width: 100%;
+}
+
+.footerinfo {
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+    text-align: center;
+}
+
+footer a:hover {
+    color: var(--contrast-color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--text-color-light);
+}
+
+footer p {
+    padding-top: 60px;
+    text-align: center;
+}
+
+#eml {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: solid 1px grey;
+}
+
+#eml input::placeholder {
+    color: grey;
+}
+
+#eml input {
+    text-align: center;
+    border: 0;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--bg-dark-color);
+}
+
+#agr {
+    padding-top: 12px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 10px;
+    background-color: var(--text-color-light);
+    color: black;
+    border: none;
+    margin: 0px auto;
+    font-size: 1.1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--contrast-color);
+    color: var(--text-color);
+}
+
+footer ul {
+    padding-top: 30px;
+    text-align: center;
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    padding-top: 30px;
+    font-size: 0.7rem;
+}
+
+.credit {
+    padding-top: 15px;
+    font-size: 0.7rem;
+}
+
+
+/*C O N T A I N E R S*/
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    main h1 {
+        font-size: 4.3rem;
+    }
+    .imageplanet p {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    .headerlogo {
+        width: 100%;
+        height: 100%;
+    }
+    .navigation {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .navigation li {
+        text-align: left;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .navigation a {
+        font-size: 1.8rem;
+    }
+    header {
+        height: 16vh;
+    }
+    .main-index h1 {
+        font-size: 6.2rem;
+    }
+    .imageplanet p {
+        font-size: 3.6rem;
+    }
+    footer p {
+        font-size: 1.8rem;
+    }
+    #eml input {
+        font-size: 1.8rem;
+    }
+    #agr {
+        font-size: 1.2rem;
+    }
+    footer li {
+        font-size: 1.2rem;
+    }
+    .credit {
+        font-size: 0.9rem;
+    }
+    .copyright {
+        font-size: 0.9rem;
+    }
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card-c {
+        background-color: var(--bg-light-color);
+    }
+    .card-container p {
+        padding-bottom: 60px;
+    }
+    .scifi-author {
+        margin-bottom: 0px;
+    }
+    .main-scifi h1 {
+        font-size: 3.4rem;
+    }
+    .grid-container-scifi {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-gap: 24px 24px;
+    }
+    .scifi-title {
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+    .scifi-cite {
+        font-size: 1.1rem;
+    }
+    .grid-container-scifi cite {
+        font-size: 1.3rem;
+    }
+    .main-cinema h1 {
+        font-size: 3.4rem;
+    }
+    .grid-container-cinema {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 50px;
+        column-gap: 20px;
+    }
+    .video-card figure figcaption {
+        font-size: 1.5rem;
+    }
+    .grid-container-mars2020 {
+        grid-template-columns: 1fr 3fr;
+    }
+    .mars2020-list {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .mars2020-article {
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    .mars2020-list {
+        margin-top: 42px;
+    }
+    .main-mars2020 p {
+        text-align: justify;
+    }
+    .mars2020-article ul {
+        text-align: justify;
+    }
+    .main-mars2020 .video-card figure figcaption {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+    .scifi-title {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .scifi-cite {
+        font-size: 1.3rem;
+    }
+    .grid-container-scifi cite {
+        font-size: 1.5rem;
+    }
+}
